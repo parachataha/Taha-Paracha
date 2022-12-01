@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cairo:wght@300;400;500;600;700;800;900;1000&display=swap");
+.zero-m-p {
+  margin: 0vw;
+  padding: 0vw;
+}
+
+.container {
+  margin: 0vw 10vw 0vw 10vw;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+h2 {
+  font-size: 3.8vw;
+}
+
+h3 {
+  font-size: 3vw;
+  margin: 0vw;
+  padding: 0vw;
+}
+
+p {
+  font-size: 1.3vw;
+}
+
+p.lead {
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+
+.coloured {
+  color: #FC21F5;
+}
+
+.small {
+  font-size: 0.8vw;
+  margin: 0vw;
+  padding: 0vw;
+}
+
+h4 {
+  font-size: 2vw;
+  margin: 0vw;
+  padding: 0vw;
+}
+
+.button-1 {
+  padding: 0.8vw;
+  border-radius: 1vw;
+  border: 0.1vw solid white;
+  margin: 0vw 0vw 0vw 0vw;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1vw;
+}
+.button-1:hover {
+  background-color: white;
+  transition: 0.5s;
+  color: black;
+  border: 1px solid black;
+}
+
+.button-2 {
+  padding: 0.8vw;
+  border-radius: 1vw;
+  margin: 0vw 0vw 0vw 0vw;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  font-size: 1.1vw;
+  transition: 0.4s;
+}
+.button-2:hover {
+  padding: 1vw;
+  font-size: 1.3vw;
+  transition: 0.4s;
+  border-radius: 1.2vw;
+}
+
+.link {
+  color: #FC21F5;
+  text-decoration: underline;
+  text-decoration-color: #FC21F5;
+}
+.link:hover {
+  color: #6c0068;
+  text-decoration-color: #6c0068;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: white;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  background-image: url("/assets/home-bg-1.png");
+  background-repeat: no-repeat;
+  background-size: cover, 300%;
+  padding-bottom: 30vw;
+  width: 100%;
+}
+header nav {
+  width: 100%;
+  padding-top: 1.5vw;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0px 0vw 0px 0px;
+}
+header nav ul li {
+  margin: 0px 1vw 1vw 1vw;
+  color: black;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: white;
+  padding: 1vw 1.5vw 1vw 1.5vw;
+  transition: 1s;
+}
+header nav ul li a:hover, header nav ul li a:active {
+  color: #6c0068;
+  transition: 0.1s;
+}
+header h1 {
+  margin: 3vw 0vw 0vw 0vw;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  font-size: 4vw;
+}
+header p {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+}
+header .scroll {
+  background-image: linear-gradient(45deg, #9012FF, #FC21F5);
+  animation: link 3s infinite reverse;
+  color: white;
+  padding: 1.2vw;
+  border-radius: 100%;
+  background-size: 200%;
+  font-size: 1vw;
+  position: absolute;
+  top: 40vw;
+  left: 47%;
+  margin: 0px 0px 0px 0px;
+}
+header .scroll a {
+  text-decoration: none;
+  color: white;
+}
+header .scroll:hover {
+  background: white;
+  border: 1px solid black;
+}
+header .scroll:hover a {
+  color: black;
+}
+
+@keyframes link {
+  0% {
+    background-position: right;
+  }
+  50% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+section#skills {
+  background-color: #f5f5f5;
+  padding: 1vw;
+  margin: 0vw 0vw 1vw 0vw;
+}
+
+section#skills h2 {
+  color: black;
+  text-align: center;
+  font-size: 3.8vw;
+  font-family: "Poppins", sans-serif;
+}
+
+div.skills {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  margin: 0vw 1vw 2vw 0vw;
+  grid-template-columns: 33.3vw 33.3vw 33.3vw;
+}
+div.skills div {
+  padding: 6vw 2vw 6vw 2vw;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 0.2vw;
+  text-align: center;
+  margin-left: 3.5vw;
+  margin-right: 3.5vw;
+  box-shadow: 5px 5px 10px #888888;
+}
+div.skills div p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1vw;
+}
+div.skills div h3 {
+  margin: 5px;
+  padding: 0px;
+  font-size: 3vw;
+  color: #c800ff;
+}
+div.skills div .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 64;
+  font-size: 5vw;
+  color: #c800ff;
+  margin: 0px;
+  padding: 0px;
+}
+
+section.code .grid {
+  display: grid;
+  grid-template-columns: 48vw 50vw;
+}
+section.code .grid:nth-child(1) {
+  margin: 0vw 0vw 0vw 2vw;
+  text-align: center;
+}
+section.code .grid:nth-child(1) h2 {
+  margin: 0vw;
+  padding: 0vw;
+  text-align: center;
+}
+section.code .grid div.vs {
+  background-color: #161616;
+  margin: 2vw 0vw 2vw 2vw;
+  border-radius: 1vw 0vw 0vw 1vw;
+  box-shadow: 0 1vw 2vw 0 rgba(0, 0, 0, 0.2), 0 2vw 1vw 0 rgba(0, 0, 0, 0.19);
+  padding: 0vw;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  box-shadow: 1vw 1vw 5vw black;
+  color: white;
+}
+section.code .grid div.vs .side {
+  background-color: #262626;
+  padding-bottom: 5vw;
+  margin: 1vw;
+  border-radius: 0.5vw;
+  width: 19vw;
+  padding: 0.2vw;
+}
+section.code .grid div.vs .side .branding {
+  padding-top: 5px;
+  padding-left: 15px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+section.code .grid div.vs .side .branding img {
+  width: 5vw;
+  margin: 0vw;
+  padding: 0vw;
+  margin: 0vw;
+}
+section.code .grid div.vs .side .branding h3 {
+  font-size: 1.7vw;
+  margin: 0vw;
+  padding: 0vw;
+  margin: 2vw 0vw 2vw 0vw;
+}
+section.code .grid div.vs .side ul {
+  padding: 0vw 0.2vw 0vw 0.2vw;
+}
+section.code .grid div.vs .side ul li {
+  padding: 1vw 6vw 1vw 1vw;
+  font-size: 1.3vw;
+  list-style: none;
+  text-align: left;
+  border-radius: 1vw;
+  background: #3a3a3a;
+  margin: 1vw 0vw 0vw 0vw;
+  cursor: pointer;
+}
+section.code .grid div.vs .side ul li:hover {
+  background-image: -webkit-linear-gradient(45deg, #ea00ff, #4f0ceb);
+  background-image: linear-gradient(45deg, #ea00ff, #4f0ceb);
+  cursor: pointer;
+  background-size: 200%;
+  animation: hover-file-vs 15s infinite alternate;
+}
+section.code .grid div.vs .side ul li.active {
+  background-image: -webkit-linear-gradient(45deg, #ea00ff, #4f0ceb);
+  background-image: linear-gradient(45deg, #ea00ff, #4f0ceb);
+  cursor: pointer;
+  background-size: 200%;
+  animation: hover-file-vs 15s infinite alternate;
+}
+section.code .grid .sub-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+section.code .grid .sub-grid div {
+  padding: 1vw 0.6vw 2vw 0.6vw;
+  margin: 1vw;
+  animation: hover-file-vs 20s infinite alternate;
+  color: white;
+  border-radius: 1vw;
+  border: 0.2vw solid white;
+  box-shadow: 0 1vw 2vw 0 rgba(0, 0, 0, 0.2), 0 2vw 1vw 0 rgba(0, 0, 0, 0.19);
+}
+section.code .grid .sub-grid div.one {
+  background-image: radial-gradient(#ea00ff, #8804ac);
+  background-image: -webkit-radial-gradient(#ea00ff, #8804ac);
+  box-shadow: 1vw 1vw 2vw #888888;
+}
+section.code .grid .sub-grid div.two {
+  background-image: radial-gradient(#ea00ff, #8804ac);
+  background-image: -webkit-radial-gradient(#ea00ff, #8804ac);
+  box-shadow: 1vw 1vw 2vw #888888;
+}
+
+@keyframes hover-file-vs {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+div.vs {
+  padding: 1vw 1vw 1vw 1vw;
+}
+
+.test {
+  background-image: linear-gradient(45deg, black, white);
+  background-image: -webkit-linear-gradient(45deg, black, white);
+  background-clip: text;
+}
+
+section.design {
+  background-color: #f5f5f5;
+  padding: 3vw;
+  margin-top: 2vw;
+}
+section.design div.main {
+  text-align: center;
+}
+section.design div.main h2 {
+  margin: 0vw;
+  padding: 0vw;
+}
+section.design div.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  color: white;
+}
+section.design div.grid .big-box {
+  padding: 3vw 1.5vw 3vw 1.5vw;
+  background-image: -webkit-radial-gradient(#c93fff, #a400e5);
+  background-image: radial-gradient(#c93fff, #a400e5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vw;
+  margin: 0.5vw;
+}
+section.design div.grid .box-group .row-1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 1vw;
+}
+section.design div.grid .box-group .row-1 div {
+  padding: 3vw 1.5vw 3vw 1.5vw;
+  background-image: -webkit-radial-gradient(#c93fff, #a400e5);
+  background-image: radial-gradient(#c93fff, #a400e5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vw;
+  margin: 0.5vw;
+}
+section.design div.grid .box-group .row-2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 1vw;
+}
+section.design div.grid .box-group .row-2 div {
+  padding: 3vw 1.5vw 3vw 1.5vw;
+  background-image: -webkit-radial-gradient(#c93fff, #a400e5);
+  background-image: radial-gradient(#c93fff, #a400e5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vw;
+  margin: 0.5vw;
+}
+section.design div.grid .box-group .row-2 div.gold {
+  background-image: -webkit-radial-gradient(#da8a00, #ffd343);
+  background-image: radial-gradient(#da8a00, #ffd343);
+}
+
+@media (max-width: 688px) {
+  header {
+    background-image: url("/assets/home-bg-1.png");
+    background-size: cover, 100%;
+  }
+  section#skills div.skills {
+    display: block;
+  }
+  section#skills div.skills div {
+    margin: 2vw;
+  }
+}/*# sourceMappingURL=index.css.map */
