@@ -500,7 +500,7 @@ section#work div.code div {
   padding: 0.7vw;
   border-radius: 10px;
   text-decoration: none;
-  background-size: 101%;
+  background-size: 110%;
   background-position: 50%;
   background-repeat: no-repeat;
   transition: 0.5s ease-in-out;
@@ -508,10 +508,19 @@ section#work div.code div {
 section#work div.code div:hover, section#work div.code div:active {
   padding: 1vw;
   transition: 0.5s ease-in-out;
-  background-size: 110%;
+  background-size: 115%;
+}
+section#work div.code div:hover p, section#work div.code div:active p {
+  opacity: 100%;
+  transition: 0.5s ease-in-out;
+}
+section#work div.code div p.type {
+  color: #e8e8e8;
+  font-size: 1vw;
+  font-weight: 700;
 }
 section#work div.code div h3 {
-  margin: 6vw 0px 0px 0px;
+  margin: 0;
   padding: 0;
   font-size: 1.5vw;
   transition: 1s;
@@ -520,12 +529,18 @@ section#work div.code div h3 {
 section#work div.code div p {
   margin: 0;
   padding: 0;
-  transition: 0.5s ease-in-out;
+}
+section#work div.code div p.info {
+  margin: 6vw 0px 0px 0px;
+  padding: 0;
   text-decoration: none;
+  font-size: 0.8vw;
+  opacity: 0%;
+  transition: 0.5s ease-in-out;
 }
 section#work div.code div.portfolio {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/portfolio 1.png");
-  background-size: 101%;
+  background-size: 110%;
   background-position: 50%;
   background-repeat: no-repeat;
   transition: 0.5s ease-in-out;
@@ -533,11 +548,15 @@ section#work div.code div.portfolio {
 section#work div.code div.portfolio:hover, section#work div.code div.portfolio:active {
   padding: 1vw;
   transition: 0.5s ease-in-out;
-  background-size: 110%;
+  background-size: 115%;
+}
+section#work div.code div.portfolio:hover p, section#work div.code div.portfolio:active p {
+  opacity: 100%;
+  transition: 0.5s ease-in-out;
 }
 section#work div.code div.summit {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/summit 1.png");
-  background-size: 101%;
+  background-size: 110%;
   background-position: 50%;
   background-repeat: no-repeat;
   transition: 0.5s ease-in-out;
@@ -545,11 +564,15 @@ section#work div.code div.summit {
 section#work div.code div.summit:hover, section#work div.code div.summit:active {
   padding: 1vw;
   transition: 0.5s ease-in-out;
-  background-size: 110%;
+  background-size: 115%;
+}
+section#work div.code div.summit:hover p, section#work div.code div.summit:active p {
+  opacity: 100%;
+  transition: 0.5s ease-in-out;
 }
 section#work div.code div.chillbot {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/chillbot 1.png");
-  background-size: 101%;
+  background-size: 110%;
   background-position: 50%;
   background-repeat: no-repeat;
   transition: 0.5s ease-in-out;
@@ -557,7 +580,11 @@ section#work div.code div.chillbot {
 section#work div.code div.chillbot:hover, section#work div.code div.chillbot:active {
   padding: 1vw;
   transition: 0.5s ease-in-out;
-  background-size: 110%;
+  background-size: 115%;
+}
+section#work div.code div.chillbot:hover p, section#work div.code div.chillbot:active p {
+  opacity: 100%;
+  transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 688px) {
