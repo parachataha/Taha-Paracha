@@ -8,6 +8,18 @@ $design-radial: -webkit-radial-gradient(#c93fff, #a400e5);
     padding: 0vw;
 }
 
+@mixin design-box {
+    padding: 3vw 1.5vw 3vw 1.5vw;
+    background-image: radial-gradient(#c93fff, #a400e5);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    margin: 0.5vw;
+    box-shadow: 1vw 1vw 2vw #888888;
+}
+
 .zero-m-p {
     @include zero;
 }
@@ -39,7 +51,6 @@ h4 { font-size: 2vw; @include zero}
         background-color: white;
         transition: 0.5s;
         color: black;
-        border: 1px solid black;
     }
 }
 .button-2 {
@@ -63,10 +74,12 @@ h4 { font-size: 2vw; @include zero}
 .link{
     color: #FC21F5;
     text-decoration: underline;
-    text-decoration-color: #FC21F5;
+    -webkit-text-decoration-color: #FC21F5;
+            text-decoration-color: #FC21F5;
     &:hover{
         color: #6c0068;
-        text-decoration-color: #6c0068;
+        -webkit-text-decoration-color: #6c0068;
+                text-decoration-color: #6c0068;
     }
 }
 
@@ -164,6 +177,12 @@ header {
         }
     }
 
+}
+
+@-webkit-keyframes link {
+    0% { background-position: right; }    
+    50% { background-position: left; }   
+    100% { background-position: right;  }    
 }
 
 @keyframes link {
@@ -292,21 +311,23 @@ section.code {
 
                         }
                         li:hover{
-                            background-image: -webkit-linear-gradient(45deg, #ea00ff, #4f0ceb);
                             background-image: linear-gradient(45deg, #ea00ff, #4f0ceb);
                             cursor: pointer;
                             background-size: 200%;
 
-                            animation: hover-file-vs 15s infinite alternate;
+                            -webkit-animation: hover-file-vs 15s infinite alternate;
+
+                                    animation: hover-file-vs 15s infinite alternate;
 
                     }
                     li.active {
-                        background-image: -webkit-linear-gradient(45deg, #ea00ff, #4f0ceb);
                         background-image: linear-gradient(45deg, #ea00ff, #4f0ceb);
                         cursor:pointer;
                         background-size: 200%;
                     
-                        animation: hover-file-vs 15s infinite alternate; 
+                        -webkit-animation: hover-file-vs 15s infinite alternate;
+                    
+                                animation: hover-file-vs 15s infinite alternate; 
                     }
                 }
             }
@@ -322,28 +343,25 @@ section.code {
             div {
                 padding: 1vw 0.6vw 2vw 0.6vw;
                 margin: 1vw;
-                animation: hover-file-vs 20s infinite alternate;
+                -webkit-animation: hover-file-vs 20s infinite alternate;
+                        animation: hover-file-vs 20s infinite alternate;
                 color: white;
                 border-radius: 1vw;;
-                border: 0.2vw solid white;
+                // border: 0.2vw solid white;
                 box-shadow: 0 1vw 2vw 0 rgba(0, 0, 0, 0.2), 0 2vw 1vw 0 rgba(0, 0, 0, 0.19);
             }
-            div.one{
-                background-image: radial-gradient( #ea00ff, #8804ac);
-                background-image: -webkit-radial-gradient( #ea00ff, #8804ac);
-                box-shadow: 1vw 1vw 2vw #888888;
-
-            }
-
-            div.two{
-                background-image: radial-gradient( #ea00ff, #8804ac);
-                background-image: -webkit-radial-gradient(#ea00ff, #8804ac);
-                box-shadow: 1vw 1vw 2vw #888888;
+            div.one, div.two{
+                @include design-box;
             }
         }
 
     }
 
+}
+
+@-webkit-keyframes hover-file-vs{
+    0%{background-position: left;}
+    100%{background-position: right;}
 }
 
 @keyframes hover-file-vs{
@@ -358,19 +376,8 @@ div.vs{
 .test {
     background-image: linear-gradient(45deg, black, white);
     background-image: -webkit-linear-gradient(45deg, black, white);
-    background-clip: text;
-}
-
-@mixin design-box {
-    padding: 3vw 1.5vw 3vw 1.5vw;
-    background-image: -webkit-radial-gradient(#c93fff, #a400e5);
-    background-image: radial-gradient(#c93fff, #a400e5);
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1vw;
-    margin: 0.5vw;
+    -webkit-background-clip: text;
+            background-clip: text;
 }
 
 section.design {
@@ -416,12 +423,106 @@ section.design {
                 @include design-box;
             }
             div.gold{
-                background-image: -webkit-radial-gradient(#da8a00, #ffd343);
                 background-image: radial-gradient(#da8a00, #ffd343);
             }
 
         }
        }
+    }
+}
+
+section#editing {
+    h2 {
+        text-align: center;
+    }
+    img {
+        margin: 0vw 5vw 0vw 5vw;
+        width: 90vw;
+    }
+    div.grid {
+        margin: 1vw 5vw 0vw 5vw;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        text-align: center;
+        color: white;
+
+        div {
+            @include design-box;
+
+            h3{
+                margin: 0vw;
+            }
+            p{
+                margin: 1vw;
+            }
+        }
+        div.gold{
+            background-image: radial-gradient(#da8a00, #ffd343);
+        }
+    }
+}
+
+@mixin my-work-design {
+    background-size: 101%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+
+    &:hover, &:active {
+        padding: 1vw;
+        transition: .5s ease-in-out;
+        background-size: 110%;
+    }
+}
+
+section#work {
+    background-color: $light;
+    padding: 1vw;
+    margin: 1vw;
+    text-align: center;
+    h2{ margin: 0; padding: 0; }
+    h3 { font-size: 2.5vw; margin: 0; padding: 0; }
+
+    div.code{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+
+        a{ text-decoration: none; }
+        div { 
+            margin: 1vw; 
+            color: white;
+            text-align: left;
+            padding: .7vw;
+            border-radius: 10px;
+            text-decoration: none;
+            @include my-work-design;
+            
+            h3 {
+                margin: 6vw 0px 0px 0px; 
+                padding: 0;
+                font-size: 1.5vw;
+                transition: 1s;
+                text-decoration: none;
+            }
+            p{
+                margin: 0; padding: 0;
+                transition: .5s ease-in-out;
+                text-decoration: none;
+            }
+        }
+        div.portfolio{
+            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),  url('/assets/work/code/portfolio\ 1.png');
+            @include my-work-design;
+        }
+        
+        div.summit{
+            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),  url('/assets/work/code/summit\ 1.png');
+            @include my-work-design;
+        }
+        div.chillbot{
+            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),  url('/assets/work/code/chillbot\ 1.png');
+            @include my-work-design;
+        }
     }
 }
 
