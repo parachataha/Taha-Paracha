@@ -194,7 +194,7 @@ header {
 section#skills {
     background-color: $light;
     padding: 1vw;
-    margin: 0vw 0vw 1vw 0vw
+    margin: 0vw 0vw 1vw 0vw;
 }
 
 section#skills h2 {
@@ -221,6 +221,12 @@ section#skills h2 {
             margin-right: 3.5vw;
             box-shadow: 5px 5px 10px #888888;
 
+            .bi {
+                font-size: 3.5vw;
+                margin: 0.5vw;
+                color: #c800ff;
+            }
+
             p{
                 margin: 0px;
                 padding: 0px;
@@ -231,16 +237,6 @@ section#skills h2 {
                 padding: 0px;
                 font-size: 3vw;
                 color: #c800ff;
-            }
-            .material-symbols-outlined {
-                font-variation-settings:
-                'FILL' 0,
-                'wght' 500,
-                'GRAD' 0,
-                'opsz' 64;
-                font-size: 5vw;
-                color: #c800ff;
-                margin: 0px; padding: 0px;
             }
         }
     }
@@ -462,6 +458,26 @@ section#editing {
     }
 }
 
+@-webkit-keyframes appear {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+
+@keyframes appear {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+
+@-webkit-keyframes disappear {
+    0% { opacity: 100%; }
+    100% { opacity: 0%; }
+}
+
+@keyframes disappear {
+    0% { opacity: 100%; }
+    100% { opacity: 0%; }
+}
+
 @mixin my-work-design {
     background-size: 110%;
     background-position: 50%;
@@ -475,6 +491,16 @@ section#editing {
 
         p {
             opacity: 100%;
+            transition: .5s ease-in-out;
+        }
+        .bi{
+            display: inline-block;
+            transition: .5s ease-in-out;
+            -webkit-animation: appear 1s;
+                    animation: appear 1s;
+        }
+        div.rating {
+            display: block;
             transition: .5s ease-in-out;
         }
     }
@@ -493,7 +519,7 @@ section#work {
         grid-template-columns: 25% 25% 25% 25%;
 
         a{ text-decoration: none; }
-        div { 
+        div {
             margin: 1vw; 
             color: white;
             text-align: left;
@@ -519,7 +545,28 @@ section#work {
                 opacity: 0%;
                 transition: .5s ease-in-out;
             }
+
+            .bi {
+                color: black;
+                float: right;
+                display: none;
+                background-color: white;
+                border-radius: 50%;
+                padding: .5vw;
+                transition: .5s ease-in-out;
+                text-decoration: none;
+                margin: 5px;
+            }
         }
+        div.rating {
+            background-color: rgb(149, 149, 149);
+            border: 1px solid black;
+            display: none;
+            margin: 0; padding: 0;
+            color: black;
+            transition: .5s ease-in-out;
+        }
+        
         div.portfolio{
             background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),  url('/assets/work/code/portfolio\ 1.png');
             @include my-work-design;
