@@ -434,6 +434,9 @@ section.design div.grid .box-group .row-2 div.gold {
   background-image: radial-gradient(#da8a00, #ffd343);
 }
 
+section#editing {
+  padding-bottom: 3vw;
+}
 section#editing h2 {
   text-align: center;
 }
@@ -502,190 +505,170 @@ section#editing div.grid div.gold {
   }
 }
 section#work {
-  background-color: #f5f5f5;
   padding: 1vw;
-  margin: 1vw;
-  text-align: center;
+  margin: 0;
+  background-color: #f5f5f5;
 }
 section#work h2 {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
-section#work h3 {
-  font-size: 2.5vw;
+section#work p.title {
   margin: 0;
   padding: 0;
+  text-align: center;
+  font-weight: 600;
 }
-section#work div.code {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-}
-section#work div.code a {
+section#work a {
   text-decoration: none;
-}
-section#work div.code div {
-  margin: 1vw;
   color: white;
   text-align: left;
-  padding: 0.7vw;
-  border-radius: 10px;
-  text-decoration: none;
-  background-size: 110%;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  transition: 0.5s ease-in-out;
+  margin: 1vw;
 }
-section#work div.code div:hover, section#work div.code div:active {
-  padding: 1vw;
-  transition: 0.5s ease-in-out;
-  background-size: 115%;
-}
-section#work div.code div:hover p, section#work div.code div:active p {
-  opacity: 100%;
-  transition: 0.5s ease-in-out;
-}
-section#work div.code div:hover .bi, section#work div.code div:active .bi {
-  display: inline-block;
-  transition: 0.5s ease-in-out;
-  -webkit-animation: appear 1s;
-  animation: appear 1s;
-}
-section#work div.code div:hover div.rating, section#work div.code div:active div.rating {
-  display: block;
-  transition: 0.5s ease-in-out;
-}
-section#work div.code div p.type {
-  color: #e8e8e8;
-  font-size: 1vw;
-  font-weight: 700;
-}
-section#work div.code div h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 1.5vw;
-  transition: 1s;
-  text-decoration: none;
-}
-section#work div.code div p {
+section#work a p {
   margin: 0;
   padding: 0;
 }
-section#work div.code div p.info {
-  margin: 6vw 0px 0px 0px;
+section#work a h4 {
+  margin: 0;
   padding: 0;
-  text-decoration: none;
-  font-size: 0.8vw;
+}
+section#work p.info {
+  text-align: left;
+  margin-top: 6vw;
+  font-size: 0.9vw;
   opacity: 0%;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s;
+  font-weight: 400;
 }
-section#work div.code div .bi {
-  color: black;
-  float: right;
-  display: none;
+section#work p.type {
+  text-align: left;
+  font-weight: 400;
+  color: #f3f3f3;
+}
+section#work .bi {
+  opacity: 0%;
+  transition: 1s;
   background-color: white;
   border-radius: 50%;
-  padding: 0.5vw;
-  transition: 0.5s ease-in-out;
+  color: black;
+  float: right;
+  padding: 0.9vw;
   text-decoration: none;
   margin: 5px;
+  font-weight: 400;
+  font-size: 0vw;
 }
-section#work div.code div.rating {
-  background-color: rgb(149, 149, 149);
-  border: 1px solid black;
-  display: none;
-  margin: 0;
-  padding: 0;
-  color: black;
-  transition: 0.5s ease-in-out;
+section#work .bi span {
+  font-size: 0.7vw;
 }
-section#work div.code div.portfolio {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/portfolio 1.png");
-  background-size: 110%;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  transition: 0.5s ease-in-out;
+section#work div.card:hover, section#work div.card:active {
+  padding: 0.7vw;
+  background-size: 140%;
+  transition: 0.5s;
 }
-section#work div.code div.portfolio:hover, section#work div.code div.portfolio:active {
-  padding: 1vw;
-  transition: 0.5s ease-in-out;
-  background-size: 115%;
-}
-section#work div.code div.portfolio:hover p, section#work div.code div.portfolio:active p {
+section#work div.card:hover p.info, section#work div.card:active p.info {
   opacity: 100%;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s;
 }
-section#work div.code div.portfolio:hover .bi, section#work div.code div.portfolio:active .bi {
-  display: inline-block;
-  transition: 0.5s ease-in-out;
-  -webkit-animation: appear 1s;
-  animation: appear 1s;
-}
-section#work div.code div.portfolio:hover div.rating, section#work div.code div.portfolio:active div.rating {
-  display: block;
-  transition: 0.5s ease-in-out;
-}
-section#work div.code div.summit {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/summit 1.png");
-  background-size: 110%;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  transition: 0.5s ease-in-out;
-}
-section#work div.code div.summit:hover, section#work div.code div.summit:active {
-  padding: 1vw;
-  transition: 0.5s ease-in-out;
-  background-size: 115%;
-}
-section#work div.code div.summit:hover p, section#work div.code div.summit:active p {
+section#work div.card:hover .bi, section#work div.card:active .bi {
+  transition: 1s;
+  font-size: 1.3vw;
   opacity: 100%;
-  transition: 0.5s ease-in-out;
-}
-section#work div.code div.summit:hover .bi, section#work div.code div.summit:active .bi {
-  display: inline-block;
-  transition: 0.5s ease-in-out;
-  -webkit-animation: appear 1s;
-  animation: appear 1s;
-}
-section#work div.code div.summit:hover div.rating, section#work div.code div.summit:active div.rating {
-  display: block;
-  transition: 0.5s ease-in-out;
-}
-section#work div.code div.chillbot {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/chillbot 1.png");
-  background-size: 110%;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  transition: 0.5s ease-in-out;
-}
-section#work div.code div.chillbot:hover, section#work div.code div.chillbot:active {
-  padding: 1vw;
-  transition: 0.5s ease-in-out;
-  background-size: 115%;
-}
-section#work div.code div.chillbot:hover p, section#work div.code div.chillbot:active p {
-  opacity: 100%;
-  transition: 0.5s ease-in-out;
-}
-section#work div.code div.chillbot:hover .bi, section#work div.code div.chillbot:active .bi {
-  display: inline-block;
-  transition: 0.5s ease-in-out;
-  -webkit-animation: appear 1s;
-  animation: appear 1s;
-}
-section#work div.code div.chillbot:hover div.rating, section#work div.code div.chillbot:active div.rating {
-  display: block;
-  transition: 0.5s ease-in-out;
 }
 
-@media (max-width: 688px) {
-  header {
-    background-image: url("/assets/home-bg-1.png");
-    background-size: cover, 100%;
-  }
-  section#skills div.skills {
-    display: block;
-  }
-  section#skills div.skills div {
-    margin: 2vw;
-  }
+div {
+  transition: 1s;
+}
+
+div.code {
+  transition: 1s;
+}
+
+h3.title {
+  text-align: left;
+  font-size: 2vw;
+  margin: 1vw;
+  margin-top: 3vw;
+}
+
+h3.title {
+  text-align: left;
+  font-size: 2vw;
+  margin: 1vw;
+  margin-top: 3vw;
+}
+
+h3.sub-title {
+  text-align: left;
+  font-size: 1.5vw;
+  margin: 1vw;
+  margin-top: 0vw;
+}
+
+div.grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  transition: 1s;
+}
+
+div.card {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 0.5vw;
+  transition: 0.5s;
+}
+
+div.portfolio {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/portfolio 1.png");
+  background-size: 120%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+div.summit {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/summit 1.png");
+  background-size: 120%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+div.chillbot {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/chillbot 1.png");
+  background-size: 120%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+div.lenoofficial {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/itsleno 1.png");
+  background-size: 120%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+div.sub-grid {
+  transition: 1s;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+div.sub-grid div.card {
+  transition: 1s;
+}
+div.sub-grid div.card p.info {
+  margin: 0;
+  margin-top: 20px;
+}
+div.sub-grid div.todolist-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/subs/todolist-1.png");
+  background-size: 130%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+div.sub-grid div.ninjaquiz-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/subs/ninjaquiz-1.png");
+  background-size: 130%;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=index.css.map */
