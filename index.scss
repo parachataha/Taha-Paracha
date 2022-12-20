@@ -83,6 +83,7 @@ h4 { font-size: 2vw; @include zero}
     }
 }
 
+
 body{
     margin: 0px;
     padding: 0px;
@@ -176,7 +177,6 @@ header {
             border: 1px solid black;
         }
     }
-
 }
 
 @-webkit-keyframes link {
@@ -493,6 +493,21 @@ $black-trans: linear-gradient(rgb(0,0,0,.3),rgb(0,0,0,.3));
 
 
 section#work {
+    p.sub-text {
+        font-size: 1vw;
+        color: #2a2a2a;
+        
+        a.text {
+            color: #2a2a2a;
+            text-decoration: underline;
+            text-decoration-color: #a400e5;
+            margin: 0; padding: 0;
+
+            &:hover, &:active {
+                color: #a400e5;
+            }
+        }
+    }
     div { transition: 1s; }
     div.code{ transition: 1s; }
         h3.title {

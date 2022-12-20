@@ -509,6 +509,20 @@ section#work {
   margin: 0;
   background-color: #f5f5f5;
 }
+section#work p.sub-text {
+  font-size: 1vw;
+  color: #2a2a2a;
+}
+section#work p.sub-text a.text {
+  color: #2a2a2a;
+  text-decoration: underline;
+  text-decoration-color: #a400e5;
+  margin: 0;
+  padding: 0;
+}
+section#work p.sub-text a.text:hover, section#work p.sub-text a.text:active {
+  color: #a400e5;
+}
 section#work div {
   transition: 1s;
 }
