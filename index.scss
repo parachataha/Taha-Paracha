@@ -493,15 +493,35 @@ $black-trans: linear-gradient(rgb(0,0,0,.3),rgb(0,0,0,.3));
 
 
 section#work {
-    padding: 1vw; margin: 0;
-    background-color: $light;
-    h2 {
-        margin: 0; padding: 0;
-        text-align: center;
-    }
-    p.title {
-        margin: 0; padding: 0; text-align: center; font-weight: 600;
-    }
+    div { transition: 1s; }
+    div.code{ transition: 1s; }
+        h3.title {
+            text-align: left;  
+            font-size: 2vw;
+            margin: 1vw; 
+            margin-top: 3vw;
+        }
+        h3.title {
+            text-align: left;  
+            font-size: 2vw;
+            margin: 1vw; 
+            margin-top: 3vw;
+        }
+        h3.sub-title {
+            text-align: left;  
+            font-size: 1.5vw;
+            margin: 1vw; 
+            margin-top: 0vw;
+        }
+        h2 {
+            margin: 0; padding: 0;
+            text-align: center;
+        }
+        padding: 1vw; margin: 0;
+        background-color: $light;
+        p.title {
+            margin: 0; padding: 0; text-align: center; font-weight: 600;
+        }
     a{
         text-decoration: none;
         color: white;
@@ -556,28 +576,6 @@ section#work {
                     opacity: 100%;
                 }
             }
-        }
-
-    div { transition: 1s; }
-    div.code{ transition: 1s; }
-        h3.title {
-            text-align: left;  
-            font-size: 2vw;
-            margin: 1vw; 
-            margin-top: 3vw;
-        }
-        h3.title {
-            text-align: left;  
-            font-size: 2vw;
-            margin: 1vw; 
-            margin-top: 3vw;
-        }
-        h3.sub-title {
-            text-align: left;  
-            font-size: 1.5vw;
-            margin: 1vw; 
-            margin-top: 0vw;
-        }
 
         div.grid{
             display: grid;
@@ -616,7 +614,7 @@ section#work {
                 transition: 1s;
                 p.info {
                     margin: 0;
-                    margin-top: 20px;
+                    margin-top: 3vw;
                 }
             }
             div.todolist-1 {
@@ -627,4 +625,9 @@ section#work {
                 background: $black-trans, url('/assets/work/code/subs/ninjaquiz-1.png');
                 @include work-code-card-2;
             }
+            div.weatherapp-1 {
+                background: $black-trans, url('/assets/work/code/subs/weatherapp-1.png');
+                @include work-code-card-2;
+            }
         }
+    }

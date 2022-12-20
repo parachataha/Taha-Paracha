@@ -509,6 +509,30 @@ section#work {
   margin: 0;
   background-color: #f5f5f5;
 }
+section#work div {
+  transition: 1s;
+}
+section#work div.code {
+  transition: 1s;
+}
+section#work h3.title {
+  text-align: left;
+  font-size: 2vw;
+  margin: 1vw;
+  margin-top: 3vw;
+}
+section#work h3.title {
+  text-align: left;
+  font-size: 2vw;
+  margin: 1vw;
+  margin-top: 3vw;
+}
+section#work h3.sub-title {
+  text-align: left;
+  font-size: 1.5vw;
+  margin: 1vw;
+  margin-top: 0vw;
+}
 section#work h2 {
   margin: 0;
   padding: 0;
@@ -577,98 +601,68 @@ section#work div.card:hover .bi, section#work div.card:active .bi {
   font-size: 1.3vw;
   opacity: 100%;
 }
-
-div {
-  transition: 1s;
-}
-
-div.code {
-  transition: 1s;
-}
-
-h3.title {
-  text-align: left;
-  font-size: 2vw;
-  margin: 1vw;
-  margin-top: 3vw;
-}
-
-h3.title {
-  text-align: left;
-  font-size: 2vw;
-  margin: 1vw;
-  margin-top: 3vw;
-}
-
-h3.sub-title {
-  text-align: left;
-  font-size: 1.5vw;
-  margin: 1vw;
-  margin-top: 0vw;
-}
-
-div.grid {
+section#work div.grid {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   transition: 1s;
 }
-
-div.card {
+section#work div.card {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 0.5vw;
   transition: 0.5s;
   background-size: cover;
 }
-
-div.portfolio {
+section#work div.portfolio {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/portfolio 1.png");
   background-size: 120%;
   background-position: 50%;
   background-repeat: no-repeat;
 }
-
-div.summit {
+section#work div.summit {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/summit 1.png");
   background-size: 120%;
   background-position: 50%;
   background-repeat: no-repeat;
 }
-
-div.chillbot {
+section#work div.chillbot {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/chillbot 1.png");
   background-size: 120%;
   background-position: 50%;
   background-repeat: no-repeat;
 }
-
-div.lenoofficial {
+section#work div.lenoofficial {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/itsleno 1.png");
   background-size: 120%;
   background-position: 50%;
   background-repeat: no-repeat;
 }
-
-div.sub-grid {
+section#work div.sub-grid {
   transition: 1s;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
 }
-div.sub-grid div.card {
+section#work div.sub-grid div.card {
   transition: 1s;
 }
-div.sub-grid div.card p.info {
+section#work div.sub-grid div.card p.info {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 3vw;
 }
-div.sub-grid div.todolist-1 {
+section#work div.sub-grid div.todolist-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/subs/todolist-1.png");
   background-size: 130%;
   background-position: 50%;
   background-repeat: no-repeat;
 }
-div.sub-grid div.ninjaquiz-1 {
+section#work div.sub-grid div.ninjaquiz-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/subs/ninjaquiz-1.png");
+  background-size: 130%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+section#work div.sub-grid div.weatherapp-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/work/code/subs/weatherapp-1.png");
   background-size: 130%;
   background-position: 50%;
   background-repeat: no-repeat;
